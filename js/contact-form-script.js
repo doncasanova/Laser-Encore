@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 $("#contactForm").validator().on("submit", function (event) {
     console.log("hello");
     if (event.isDefaultPrevented()) {

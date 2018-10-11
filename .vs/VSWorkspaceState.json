@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\js",
     "\\php"
   ],
-<<<<<<< HEAD
-  "SelectedNode": "\\css\\main.css",
-=======
-  "SelectedNode": "\\specialEvents.html",
->>>>>>> 39cd9a20df1362887bdd61ec45816c7c98ee6e28
+  "SelectedNode": "\\js\\contact-form-script.js",
   "PreviewInSolutionExplorer": false
 }
