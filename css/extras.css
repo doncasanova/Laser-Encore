@@ -21,7 +21,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: cover;
 }
 
 #feature {
@@ -30,7 +30,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: cover;
 }
 
 #about {
@@ -38,7 +38,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: cover;
 }
 
 #services {
@@ -48,7 +48,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: cover;
 }
 
 #team{
