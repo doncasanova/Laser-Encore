@@ -52,7 +52,7 @@ $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
+console.log($success)
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";

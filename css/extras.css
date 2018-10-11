@@ -9,14 +9,48 @@
   position: relative;
 }
 .section-padding{
-  padding: 60px 0!important;
+  padding: 120px 0!important;
 }
 .controls{
 	padding: 0px!important;
 }
-#about{
-	background: #F6F6F6;
+
+#portfolio {
+    padding: 30px 0;
+    background-image: url("../gifs/starWars.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#feature {
+    padding: 30px 0;
+    *background-image: url("../gifs/crowd.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-image: url("../gifs/fair.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#services {
+
+    padding: 30px 0;
+    background-image: url("../gifs/crowd.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #team{
 	background: #F6F6F6;
 }
@@ -285,7 +319,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #portfolio {
-  background: #F6F6F6;
+  /*background: #F6F6F6;*/
   width: 100%;
 }
 
@@ -309,4 +343,37 @@ a:focus:not([href]):not([tabindex]), a:hover:not([href]):not([tabindex]) {
 .controls .active {
   color: #fff !important;
   background: #E63D4F;
+}
+
+
+
+.imageButton {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    }
+
+.imageButton img {
+    width: 100%;
+    height: auto;
+}
+
+.imageButton .btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+ }
+
+.imageButton .btn:hover {
+    background-color: black;
 }

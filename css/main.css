@@ -8,7 +8,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 /* para*/
 .parallax {
     /* The image used */
-    background-image: url("https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/edmlasers4.jpg?fit=930%2C532&ssl=1");
+    /*background-image: url("https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/edmlasers4.jpg?fit=930%2C532&ssl=1");*/
     /* Set a specific height */
     min-height:250px;
     /* Create the parallax scrolling effect */
@@ -16,6 +16,16 @@ More Info: https://uideck.com/products/helium-ui-kit
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.video1 {
+    /*background-image: url("./gifs/fair.gif");*/
+}
+
+.logo {
+
+    width: 150%;
+
 }
 
 .aboutContainerBG {
@@ -28,6 +38,12 @@ More Info: https://uideck.com/products/helium-ui-kit
     opacity: .8;
     color: black;
     border-radius: 20px;
+}
+.specialP {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .aboutH2 {
@@ -49,8 +65,10 @@ More Info: https://uideck.com/products/helium-ui-kit
     border-radius: 20px;
 }
 
-.specialEvent{
-    background-color: white;
+.specialEvent {
+    background-color: black;
+    opacity: .5;
+    background: rgba(0, 0, 0, 0.1);
 }
 /*slider*/
 .slider {
@@ -58,6 +76,13 @@ More Info: https://uideck.com/products/helium-ui-kit
     height: 100%;
 }
 #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#myVideo2 {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1675,9 +1700,6 @@ nav#menu span.fa.fa-bars:hover {
   border-radius: 50%;
 }
 
-#services {
-  padding: 30px 0;
-}
 
 .service-box {
   margin-top: 15px;

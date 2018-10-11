@@ -1,4 +1,5 @@
 $("#contactForm").validator().on("submit", function (event) {
+    console.log("hello");
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
@@ -18,6 +19,7 @@ function submitForm(){
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
+   
 
     $.ajax({
         type: "POST",
