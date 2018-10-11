@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "email@gmail.com";
+$EmailTo = "ethanjuan@yahoo.com";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -52,7 +52,7 @@ $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
+console.log($success)
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";

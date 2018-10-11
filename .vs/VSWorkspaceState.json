@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\gifs",
+    "\\img"
   ],
-  "SelectedNode": "\\favicon-16x16.png",
+  "SelectedNode": "\\css\\extras.css",
   "PreviewInSolutionExplorer": false
 }
