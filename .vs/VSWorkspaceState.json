@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\php"
+    "\\fonts",
+    "\\img\\clients",
+    "\\img\\portfolio",
+    "\\img\\slider",
+    "\\img\\team",
+    "\\img\\testimonial",
+    "\\js"
   ],
-  "SelectedNode": "\\css\\extras.css",
+  "SelectedNode": "\\css\\main.css",
   "PreviewInSolutionExplorer": false
 }
