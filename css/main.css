@@ -68,7 +68,8 @@ More Info: https://uideck.com/products/helium-ui-kit
     font-style: italic;
     font-size: 30px;
     line-height: normal;
-    /*background: rgba(0, 0, 0, 0.1);*/
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.75);
 }
 .aboutText {
     

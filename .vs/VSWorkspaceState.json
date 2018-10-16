@@ -2,14 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\fonts",
-    "\\img\\clients",
-    "\\img\\portfolio",
-    "\\img\\slider",
-    "\\img\\team",
-    "\\img\\testimonial",
-    "\\js"
+    "\\fonts"
   ],
-  "SelectedNode": "\\css\\main.css",
+  "SelectedNode": "\\css\\extras.css",
   "PreviewInSolutionExplorer": false
 }
