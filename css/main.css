@@ -24,7 +24,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 
 .logo {
 
-    width: 150%;
+    width: 100%;
 
 }
 
@@ -39,6 +39,17 @@ More Info: https://uideck.com/products/helium-ui-kit
     color: black;
     border-radius: 20px;
 }
+.specialM {
+    /*position:absolute;
+    top:50%;
+    height:50%;
+    width: 50%;*/
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1
+}
 .specialP {
     color: white;
     font-style: italic;
@@ -52,10 +63,12 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 
 .aboutP {
+    background: black;
     color: white;
     font-style: italic;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    line-height: normal;
+    /*background: rgba(0, 0, 0, 0.1);*/
 }
 .aboutText {
     
@@ -3146,9 +3159,14 @@ nav#menu span.fa.fa-bars:hover {
   color: #fff;
   font-weight: 700;
 }
+.carousel-caption {
+    position:absolute;
+    top: 25%;
+    width: 75%;
+}
 
 #carousel-area .carousel-indicators {
-  bottom: 5px;
+    bottom: 5px;
 }
 
 #carousel-area .carousel-indicators li {
