@@ -63,13 +63,13 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 
 .aboutP {
-    background: black;
+    background: transparent;
     color: white;
     font-style: italic;
     font-size: 30px;
     line-height: normal;
     /*border-radius: 10px;*/
-    background: rgba(0, 0, 0, 0.75);
+    /*background: rgba(0, 0, 0, 0.75);*/
 }
 .aboutText {
     
