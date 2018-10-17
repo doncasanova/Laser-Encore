@@ -347,16 +347,16 @@ a:focus:not([href]):not([tabindex]), a:hover:not([href]):not([tabindex]) {
 
 
 
-.imageButton {
+/*.imageButton {
     position: relative;
     width: 100%;
     max-width: 400px;
-    }
+    }*/
 
-.imageButton img {
+/*.imageButton img {
     width: 100%;
     height: auto;
-}
+}*/
 
 .imageButton .btn {
     position: absolute;
