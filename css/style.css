@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myVideo2 {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myVideo3 {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.content2 {
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.content3 {
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn, #myBtn2, #myBtn3 {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    #myBtn2:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    #myBtn3:hover {
+        background: #ddd;
+        color: black;
+    }
+
+.imageStyle {
+    width: auto;
+    /*margin: 10px auto;*/
+    max-width: 100%;
+    max-height: 300px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
+}
+
+.modalImageStyle {
+    /*width: 50%;*/
+    /margin: 10px auto;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
+}
+
+
+
+.imageContainer {
+    width: auto;
+    /*margin: 10px auto;*/
+    max-width: 100%;
+    max-height: 300px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
+}
+
+
+img2:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
