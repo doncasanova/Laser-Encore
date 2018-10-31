@@ -43,7 +43,7 @@ function addFirstSpecialEventImage() {
 
     $(".specialE").append(`<div class="carousel-item active imageButton">
     <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"></a>
-      <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">Image Gallery</a>
                       </div>`);
 
     $(".image1").append(`<img class="slider2 imageModal" src="${image[0]}" alt="${image[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
@@ -57,7 +57,7 @@ function addFirstSpecialEventImage() {
 
     $(".specialE").append(`<div class="carousel-item imageButton">
     <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
-      <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">Image Gallery</a>
                       </div>`);
 
     //$(".image1").append(`<img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
@@ -79,9 +79,76 @@ $(modalOne).on("click", function () {
     console.log(imageModal);
     var imageModalName = imageModal.substr(11).slice(0, -4);
     $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
-    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >EDM Lasers</h4>`);
+    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >Image Gallery</h4>`);
 });
 
 
 
 // special events end
+
+
+//Fairs and Festivals start
+var image2 = ["https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/laserguitar.jpg?w=306&h=306&crop=1&ssl=1", "https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers2.jpg?w=306&h=306&crop=1&ssl=1", "https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers1.jpg?w=306&h=306&crop=1&ssl=1", "https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/snowlasers.jpg?w=306&h=306&crop=1&ssl=1", "https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/lasereagle.jpg?w=306&h=306&crop=1&ssl=1", "https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/spaceneedlelasers.jpg?w=306&h=306&crop=1&ssl=1"];
+//const imagePath = "./img/test/";
+addFirstFairFestivalImage();
+addFairFestivalImage();
+
+//var image = ["dixie.jpg", "dixie on a bird.jpg", "food turkey 068.JPG", "skiing.jpg", "SnarlingWolf.jpg"];
+//const imagePath = "./img/test/";
+
+//var imageNumber = 0;
+//var imageModal = 0;
+function addFirstFairFestivalImage() {
+
+    $(".specialFF").append(`<div class="carousel-item active imageButton">
+    <a href="#" class="imageFF" data-toggle="modal" data-target="#largeModal"></a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">Image Gallery</a>
+                      </div>`);
+
+    $(".imageFF").append(`<img class="slider3 imageModal" src="${image2[0]}" alt="${image2[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
+
+}
+
+
+function addFairFestivalImage() {
+
+    for (i = 1; i < image.length; i++) {
+
+        $(".specialFF").append(`<div class="carousel-item imageButton">
+    <a href="#" class="imageFF" data-toggle="modal" data-target="#largeModal"><img class="slider3 imageModal" src="${image2[i]}" alt="${image2[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">Image Gallery</a>
+                      </div>`);
+
+        //$(".image1").append(`<img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
+
+
+        //var imageNumber = i;
+
+    }
+
+}
+
+//const modalOne = ".imageModal";
+
+//$(modalOne).on("click", function () {
+//    $(".insertImagesModal").empty();
+//    $("#myModalLabel").empty();
+
+//    var imageModal = $(this).attr('src');
+//    console.log(imageModal);
+//    var imageModalName = imageModal.substr(11).slice(0, -4);
+//    $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
+//    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >Image Gallery</h4>`);
+//});
+
+
+
+// Fairs and Festivals end
+
+
+
+
+
+
+
+
