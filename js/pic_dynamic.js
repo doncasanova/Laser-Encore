@@ -37,8 +37,7 @@ $(newLocal).on("click", function () {
 //const imagePath = "./img/test/";
 addFirstSpecialEventImage()
 addSpecialEventImage();
-//var imageNumber = 0;
-//var imageModal = 0;
+
 function addFirstSpecialEventImage() {
 
     $(".specialE").append(`<div class="carousel-item active imageButton">
@@ -96,8 +95,6 @@ addFairFestivalImage();
 //var image = ["dixie.jpg", "dixie on a bird.jpg", "food turkey 068.JPG", "skiing.jpg", "SnarlingWolf.jpg"];
 //const imagePath = "./img/test/";
 
-//var imageNumber = 0;
-//var imageModal = 0;
 function addFirstFairFestivalImage() {
 
     $(".specialFF").append(`<div class="carousel-item active imageButton">
@@ -112,7 +109,7 @@ function addFirstFairFestivalImage() {
 
 function addFairFestivalImage() {
 
-    for (i = 1; i < image.length; i++) {
+    for (i = 1; i < image2.length; i++) {
 
         $(".specialFF").append(`<div class="carousel-item imageButton">
     <a href="#" class="imageFF" data-toggle="modal" data-target="#largeModal"><img class="slider3 imageModal" src="${image2[i]}" alt="${image2[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
