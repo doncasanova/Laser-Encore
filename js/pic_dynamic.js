@@ -35,25 +35,39 @@ $(newLocal).on("click", function () {
 
 //var image = ["dixie.jpg", "dixie on a bird.jpg", "food turkey 068.JPG", "skiing.jpg", "SnarlingWolf.jpg"];
 //const imagePath = "./img/test/";
+addFirstSpecialEventImage()
 addSpecialEventImage();
 //var imageNumber = 0;
 //var imageModal = 0;
-function addSpecialEventImage() {
-    //for (i = 0; i < image.length; i++) {
+function addFirstSpecialEventImage() {
 
-    $(".specialEvent").append(`<div class="carousel-item active imageButton">
-    <a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src= "${image[0]}" alt="${image[0]} style="width:350px;height:300px;" title="EDM Lasers"></a>
+    $(".specialE").append(`<div class="carousel-item active imageButton">
+    <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"></a>
       <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
                       </div>`);
 
-   
+    $(".image1").append(`<img class="slider2 imageModal" src="${image[0]}" alt="${image[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
+
+}
+
+
+    function addSpecialEventImage() {
+
+    for (i = 1; i < image.length; i++) {
+
+    $(".specialE").append(`<div class="carousel-item imageButton">
+    <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
+                      </div>`);
+
+    //$(".image1").append(`<img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
 
 
         //var imageNumber = i;
 
     }
 
-//}
+}
 
 const modalOne = ".imageModal";
 
