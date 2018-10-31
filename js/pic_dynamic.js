@@ -39,17 +39,21 @@ addSpecialEventImage();
 //var imageNumber = 0;
 //var imageModal = 0;
 function addSpecialEventImage() {
-    for (i = 0; i < image.length; i++) {
+    //for (i = 0; i < image.length; i++) {
 
-        $(".specialEvent").append(`<div class="carousel-item active imageButton">
-    <a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src= "${image[i]}" alt="${image[i]} style="width:350px;height:300px;" title="EDM Lasers"></a>
-        <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
-                        </div>`);
+    $(".specialEvent").append(`<div class="carousel-item active imageButton">
+    <a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src= "${image[0]}" alt="${image[0]} style="width:350px;height:300px;" title="EDM Lasers"></a>
+      <a href="specialEvents.html" class="btn btn-info" role="button">EDM Lasers</a>
+                      </div>`);
+
+   
+
+
         //var imageNumber = i;
 
     }
 
-}
+//}
 
 const modalOne = ".imageModal";
 
