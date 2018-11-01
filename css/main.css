@@ -21,11 +21,25 @@ More Info: https://uideck.com/products/helium-ui-kit
 .video1 {
     /*background-image: url("./gifs/fair.gif");*/
 }
+.topCloseModal {
+    position: absolute;
+    top: 50px;
+}
+.modalPosition {
+    position: absolute;
+    top: 150px;
+}
 
 .logo {
-
     width: 100%;
-
+}
+.introLogo {
+    position:relative;
+    top: 0px;
+}
+.introText {
+    position:absolute;
+    bottom: 10px;
 }
 
 .aboutContainerBG {
@@ -63,6 +77,8 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 
 .aboutP {
+    position:absolute;
+    bottom: 10%;
     background: transparent;
     color: white;
     font-style: italic;
@@ -3095,7 +3111,7 @@ nav#menu span.fa.fa-bars:hover {
 .customer-name {
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 40
 }
 
 #testimonials-slider .carousel-indicators {
@@ -3172,7 +3188,7 @@ nav#menu span.fa.fa-bars:hover {
 }
 .carousel-caption {
     position:absolute;
-    top: 25%;
+    top: 10%;
     width: 75%;
 }
 
@@ -4727,7 +4743,7 @@ ul.nav-tabs li a {
     margin-bottom: 40px;
   }
   .carousel-inner {
-    height: 175px;
+    height: 400px;
   }
   #carousel-area .carousel-item .carousel-caption {
     top: 2%;
