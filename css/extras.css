@@ -17,7 +17,8 @@
 
 #portfolio {
     padding: 30px 0;
-    background-image: url("../gifs/starWars.gif");
+    background-color: black;
+    /*background-image: url("../gifs/starWars.gif");*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +26,8 @@
 }
 #concerts {
     padding: 30px 0;
-    background-image: url("../gifs/starWars.gif");
+    background-color: black;
+    /*background-image: url("../gifs/starWars.gif");*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +36,8 @@
 
 #feature {
     padding: 30px 0;
-    background-image: url("../gifs/crowd.gif");
+   background-color: black;
+    /*background-image: url("../gifs/crowd.gif");*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +45,8 @@
 }
 
 #about {
-    background-image: url("../gifs/fair.gif");
+    /*background-image: url("../gifs/fair.gif");*/
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,9 +54,9 @@
 }
 
 #services {
-
     padding: 30px 0;
-    background-image: url("../gifs/crowd.gif");
+    background-color: black;
+    /*background-image: url("../gifs/crowd.gif");*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
