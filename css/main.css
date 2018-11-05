@@ -33,8 +33,11 @@ More Info: https://uideck.com/products/helium-ui-kit
 .logo {
     width: 100%;
 }
+.contactNav {
+    color: white;
+}
 .introLogo {
-    position:relative;
+    position: relative;
     top: 0px;
 }
 .introText {
@@ -95,7 +98,7 @@ More Info: https://uideck.com/products/helium-ui-kit
     border-radius: 20px;
 }
 
-.specialEvent {
+.specialEvent .fairFestival {
     background-color: black;
     opacity: .5;
     background: rgba(0, 0, 0, 0.1);
@@ -394,9 +397,9 @@ strong {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #fff;
-}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .contactNav {
+        color: #fff;
+    }
 
 #headers .navbar {
   margin-bottom: 0;

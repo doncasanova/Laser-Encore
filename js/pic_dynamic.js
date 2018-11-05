@@ -1,8 +1,8 @@
 
 
-var image = ["https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/edmlasers4.jpg?fit=930%2C532&ssl=1", "https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/indoorbeams.jpg?fit=930%2C523&ssl=1", "https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/waterscreen2.jpg?fit=930%2C932&ssl=1", "https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/schweitzerlasers.jpg?fit=930%2C621&ssl=1", "https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/laserbillboard.jpg?fit=663%2C997&ssl=1"];
-var image2 = ["https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/laserguitar.jpg?w=306&h=306&crop=1&ssl=1", "https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers2.jpg?w=306&h=306&crop=1&ssl=1", "https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers1.jpg?w=306&h=306&crop=1&ssl=1", "https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/snowlasers.jpg?w=306&h=306&crop=1&ssl=1", "https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/lasereagle.jpg?w=306&h=306&crop=1&ssl=1", "https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/spaceneedlelasers.jpg?w=306&h=306&crop=1&ssl=1"];
-//const imagePath = "./img/test/";
+var image = ["edmlasers1.jpg", "edmlasers2.jpg", "edmlasers3.jpg", "edmlasers4.jpg", "WaterScreen1.jpg", "SchweitzerLasers.jpg", "LaserBillboard.jpg"];
+var image2 = ["LaserGuitar.jpg", "BalloonFestLasers1.jpg", "BalloonFestLasers2.jpg", "BalloonFestLasers3.jpg", "SnowLasers.jpg", "LaserEagle.jpg", "SpaceNeedleLasers.jpg"];
+const imagePath = "./img/images/";
 
 
 addImage();
@@ -13,7 +13,7 @@ var imageModal = 0;
 
 function addImage() {
     for (i = 0; i < image.length; i++) {
-        $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${image[i]}" alt="${image[i]}"></a></div>`);
+        $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${imagePath}${image[i]}" alt="${image[i]}"></a></div>`);
         var imageNumber = i;
 
     }
@@ -22,7 +22,7 @@ function addImage() {
 
 function addImage2() {
     for (i = 0; i < image2.length; i++) {
-        $(".insertImagesHere2").append(`<div id = "${image2[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${image2[i]}" alt="${image2[i]}"></a></div>`);
+        $(".insertImagesHere2").append(`<div id = "${image2[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${imagePath}${image2[i]}" alt="${image2[i]}"></a></div>`);
         var imageNumber = i;
 
     }
@@ -36,19 +36,18 @@ $(newLocal).on("click", function () {
     $("#myModalLabel").empty();
 
     var imageModal = $(this).attr('src');
-    var imageModalName = imageModal.substr(11).slice(0, -4);
+    var imageModalName = imageModal.substr(13).slice(0, -4);
     $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
-    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >${imageModalName}</h4>`);
+    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >${imageModalName}</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>`);
 });
-
 
 
 //special events start
 
 
 
-//var image = ["dixie.jpg", "dixie on a bird.jpg", "food turkey 068.JPG", "skiing.jpg", "SnarlingWolf.jpg"];
-//const imagePath = "./img/test/";
 addFirstSpecialEventImage();
 addSpecialEventImage();
 
@@ -57,11 +56,10 @@ function addFirstSpecialEventImage() {
     $(".specialEli").append(`<li data-target="#carousel-slider2" data-slide-to="0" class="active"></li>`);
 
     $(".specialE").append(`<div class="carousel-item active imageButton">
-    <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"></a>
-      <a href="specialEvents.html" class="test btn btn-info" role="button">Image Gallery</a>
-                      </div>`);
+    <a href="specialEvents.html" class="image1"</a>
+                            </div>`);
 
-    $(".image1").append(`<img class="slider2 imageModal" src="${image[0]}" alt="${image[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
+    $(".image1").append(`<img class="slider2 imageModal" src="${imagePath}${image[0]}" alt="${image[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
 
 }
 
@@ -73,15 +71,11 @@ function addFirstSpecialEventImage() {
     $(".specialEli").append(`<li data-target="#carousel-slider2" data-slide-to="0" class="active"></li>`);
 
     $(".specialE").append(`<div class="carousel-item imageButton">
-    <a href="#" class="image1" data-toggle="modal" data-target="#largeModal"><img class="slider2 imageModal" src="${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
+    <a href="specialEvents.html"><img class="slider2 imageModal" src="${imagePath}${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
       <a href="specialEvents.html" class="test btn btn-info" role="button">Image Gallery</a>
                       </div>`);
 
         $(".specialEli").append(`<li data-target="#carousel-slider2" data-slide-to="${[i]}" class="active"></li>`);
-
-
-
-        //var imageNumber = i;
 
     }
 
@@ -97,7 +91,9 @@ $(modalOne).on("click", function () {
     console.log(imageModal);
     var imageModalName = imageModal.substr(11).slice(0, -4);
     $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
-    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >Image Gallery</h4>`);
+    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >Image Gallery</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>`);
 });
 
 
@@ -106,24 +102,19 @@ $(modalOne).on("click", function () {
 
 
 //Fairs and Festivals start
-
-//const imagePath = "./img/test/";
 addFirstFairFestivalImage();
 addFairFestivalImage();
-
-//var image = ["dixie.jpg", "dixie on a bird.jpg", "food turkey 068.JPG", "skiing.jpg", "SnarlingWolf.jpg"];
-//const imagePath = "./img/test/";
 
 function addFirstFairFestivalImage() {
 
     $(".insertLi").append(`<li data-target="#carousel-slider3" data-slide-to="0" class="active"></li>`);
 
     $(".specialFF").append(`<div class="carousel-item active imageButton">
-    <a href="#" class="imageFF" data-toggle="modal" data-target="#largeModal"></a>
-      <a href="fairsAndFestivals.html" class="btn btn-info" role="button">Image Gallery</a>
+    <a href="fairsAndFestivals.html" class="imageFF"></a>
+     
                       </div>`);
 
-    $(".imageFF").append(`<img class="slider3 imageModal" src="${image2[0]}" alt="${image2[0]} style=" width:100%; height: 300px; " title="EDM Lasers">`);
+    $(".imageFF").append(`<img class="slider3 imageModal" src="${imagePath}${image2[0]}" alt="${image2[0]} style=" width:100%; height: 300px; " title="EDM Lasers">`);
 
 }
 
@@ -133,8 +124,8 @@ function addFairFestivalImage() {
     for (i = 1; i < image2.length; i++) {
 
         $(".specialFF").append(`<div class="carousel-item imageButton">
-    <a href="#" class="imageFF" data-toggle="modal" data-target="#largeModal"><img class="slider3 imageModal" src="${image2[i]}" alt="${image2[i]} style=" width:100%; height: 300px; " title="EDM Lasers"></a>
-      <a href="fairsAndFestivals.html" class="btn btn-info" role="button">Image Gallery</a>
+    <a href="fairsAndFestivals.html" class="imageFF"><img class="slider3 imageModal" src="${imagePath}${image2[i]}" alt="${image2[i]} style=" width:100%; height: 300px; " title="EDM Lasers"></a>
+     
                       </div>`);
 
         $(".insertLi").append(`<li data-target="#carousel-slider3" data-slide-to="${[i]}" class="active"></li>`);
