@@ -18,6 +18,19 @@ More Info: https://uideck.com/products/helium-ui-kit
     background-size: cover;
 }
 
+.contactArea{
+    color: white;
+    background-color: black;
+}
+.textColor {
+    color: white;
+    font-size: 30px;
+}
+.phoneIcon {
+    width: 15%;
+    height: auto;
+}
+
 .video1 {
     /*background-image: url("./gifs/fair.gif");*/
 }
@@ -134,7 +147,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    color: #444;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 0px;
@@ -3294,7 +3307,7 @@ nav#menu span.fa.fa-bars:hover {
 
 /* Forms */
 .title-head {
-  color: #444;
+  color: white;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -3336,15 +3349,15 @@ nav#menu span.fa.fa-bars:hover {
 }
 
 .contact-info-title {
-  color: #444;
+  color: white;
   font-size: 24px;
   margin-bottom: 25px;
 }
 
 .contact-info a {
   display: block;
-  font-size: 14px;
-  color: #444;
+  font-size: 20px;
+  color: white;
   margin-bottom: 10px;
   position: relative;
   font-weight: 400;
@@ -3378,7 +3391,7 @@ address i {
 }
 
 .social-links li a {
-  color: #444;
+  color: white;
   font-size: 18px;
   padding-left: 0;
   margin: 10px 20px 0 0;
@@ -4698,6 +4711,7 @@ ul.nav-tabs li a {
   }
   .contact-info {
     margin-bottom: 30px;
+    color: white;
   }
   .contact-info-title {
     font-size: 18px;
