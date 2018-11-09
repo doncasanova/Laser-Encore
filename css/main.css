@@ -131,13 +131,13 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 /*slider2*/
 .slider2 {
-    width: 100%;
-    height: 400px;
+   max-width: 980px;
+   
    
 }
 .slider3 {
-    width: 100%;
-    height: 400px;
+  max-width: 980px;
+    
 }
 #myVideo {
     position: fixed;
