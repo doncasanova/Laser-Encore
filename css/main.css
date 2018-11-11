@@ -2176,6 +2176,11 @@ nav#menu span.fa.fa-bars:hover {
   padding: 30px 0;
 }
 
+/*.about {
+    position: page;
+    top: 100px;
+}*/
+
 .about h5 {
   font-size: 18px;
 }

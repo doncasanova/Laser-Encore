@@ -60,7 +60,8 @@
 			}
 
 			//Handle clicks on the nav
-			this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
+            this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
+            
 
 			//Get the section positions
 			this.getPositions();
@@ -143,7 +144,6 @@
 			var $link = $(e.currentTarget);
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
-
 			if(!$parent.hasClass(self.config.currentClass)) {
 				//Start callback
 				if(self.config.begin) {
