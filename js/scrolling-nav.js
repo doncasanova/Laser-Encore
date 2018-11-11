@@ -11,7 +11,7 @@ $(window).scroll(function() {
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
-        $($(this).attr('href')).addClass("section-padding");
+        //$($(this).attr('href')).addClass("section-padding");
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
@@ -20,7 +20,9 @@ $(function() {
 });
 
 
-$(".nav-link").on("click", function () {
-    $($(this).attr('href')).addClass("section-padding");
-});
+//$(".nav-link").on("click", function () {
+//    var paddingSection = $(this).attr('href');
+//    $(paddingSection).addClass("section-padding");
+//});
+
 
