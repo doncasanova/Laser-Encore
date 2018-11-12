@@ -11,6 +11,8 @@ addImage2();
 var imageNumber = 0;
 var imageModal = 0;
 
+
+
 function addImage() {
     for (i = 0; i < image.length; i++) {
         $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${imagePath}${image[i]}" alt="${image[i]}"></a></div>`);
@@ -136,10 +138,6 @@ function addFairFestivalImage() {
     }
 
 }
-
-
-
-
 
 // Fairs and Festivals end
 

@@ -8,7 +8,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 /* para*/
 .parallax {
     /* The image used */
-    /*background-image: url("https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/edmlasers4.jpg?fit=930%2C532&ssl=1");*/
+    background-image: url("https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/edmlasers4.jpg?fit=930%2C532&ssl=1");
     /* Set a specific height */
     min-height:250px;
     /* Create the parallax scrolling effect */
