@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Required meta tags -->
@@ -27,10 +28,13 @@
     <link rel="stylesheet" type="text/css" href="css/extras.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- Flickity Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 
 
 </head>
+
 <body>
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
@@ -40,7 +44,8 @@
                 <img class="logo" src="./img/laserLogo.png" alt="">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span class="icon-menu"></span>
                         <span class="icon-menu"></span>
@@ -143,7 +148,7 @@
                     <p class="page-scroll">test</p>
                 </li>
             </ul>
-          
+
             <!-- Mobile Menu End -->
         </nav>
         <!-- Navbar End -->
@@ -162,8 +167,14 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-caption ">
                                     <div class="introLogo"><img class="logo p-2" src="./img/laserLogo.png" alt=""></div>
-                                    <div class="intoText"><p class=" slide-title animated fadeInDown text-center aboutP p-2">Laser Encore is a full service production company that specializes in producing spectacular laser light shows, laser displays and special effects for all types of events and permanent installations. Nationally and internationally at very competitive rates.</p></div>
-                          
+                                    <div class="intoText">
+                                        <p class=" slide-title animated fadeInDown text-center aboutP p-2">Laser Encore
+                                            is a full service production company that specializes in producing
+                                            spectacular laser light shows, laser displays and special effects for all
+                                            types of events and permanent installations. Nationally and internationally
+                                            at very competitive rates.</p>
+                                    </div>
+
                                 </div>
                                 <div class="carousel-item active">
                                     <img class="slider" src="./img/images/IndoorBeams.jpg" alt="">
@@ -190,6 +201,34 @@
             </div>
         </div>
 
+        <!-- Flickity version -->
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true}'>
+            <div class="carousel-cell" style="background-image:url(./img/images/IndoorBeams.jpg);">
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="title">Laser Encore is a full service production company that specializes in producing
+                        spectacular laser light shows, laser displays and special effects for all types of events and
+                        permanent installations. Nationally and internationally at very competitive rates.</div>
+                </div>
+            </div>
+            <div class="carousel-cell" style="background-image:url(./img/images/WaterScreen1.jpg);">
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="title">Laser Encore is a full service production company that specializes in producing
+                        spectacular laser light shows, laser displays and special effects for all types of events and
+                        permanent installations. Nationally and internationally at very competitive rates.</div>
+                </div>
+            </div>
+            <div class="carousel-cell" style="background-image:url(./img/images/CATlasers.jpg);">
+                <div class="overlay"></div>
+                <div class="inner">
+                    <div class="title">Laser Encore is a full service production company that specializes in producing
+                        spectacular laser light shows, laser displays and special effects for all types of events and
+                        permanent installations. Nationally and internationally at very competitive rates.</div>
+                </div>
+            </div>
+        </div>
+
         <!-- End sliders -->
     </header>
     <!-- Header Area wrapper End -->
@@ -200,26 +239,36 @@
                 <div class="col-md-12  about">
                     <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Special Events</h2>
                     <p class="specialP">
-                        If you are looking for that “WOW” for your next meeting, celebration, product introduction, award ceremony, grand opening or trade show? Look no further, Laser Encore will customize a laser light show specifically for your event! High-tech lasers and special effects can make a powerful statement that will make your event exciting, memorable and stand out.
+                        If you are looking for that “WOW” for your next meeting, celebration, product introduction,
+                        award ceremony, grand opening or trade show? Look no further, Laser Encore will customize a
+                        laser light show specifically for your event! High-tech lasers and special effects can make a
+                        powerful statement that will make your event exciting, memorable and stand out.
                         <br>
                         <br>
-                        Our most popular 3D aerial laser beam displays project out over your audience for an amazing powerful effect. These laser displays are all scalable depending on the size of your event, audience and budget.
+                        Our most popular 3D aerial laser beam displays project out over your audience for an amazing
+                        powerful effect. These laser displays are all scalable depending on the size of your event,
+                        audience and budget.
                         <br>
                         <br>
-                        Projection media using lasers (laser billboards) to re-create your logos, graphics and animations has become popular for corporate events and large scale displays. Great for outdoor advertising on buildings or even sides of mountains.
+                        Projection media using lasers (laser billboards) to re-create your logos, graphics and
+                        animations has become popular for corporate events and large scale displays. Great for outdoor
+                        advertising on buildings or even sides of mountains.
                         <br>
                         <br>
-                        Lasers can be synchronized to music and video, plus they work great with other effects such as intelligent lighting, pyro, fireworks, flame projectors, fog, confetti and steamers.
+                        Lasers can be synchronized to music and video, plus they work great with other effects such as
+                        intelligent lighting, pyro, fireworks, flame projectors, fog, confetti and steamers.
                         <br>
                         <br>
-                        To see how a laser show can be incorporated into your event. Please check out our photos and videos for better ideas and contact us with any questions you might have.
+                        To see how a laser show can be incorporated into your event. Please check out our photos and
+                        videos for better ideas and contact us with any questions you might have.
                     </p>
 
                 </div>
             </div>
 
             <!-- large modal -->
-            <div class="modal fade modalPosition" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal fade modalPosition" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-footer">
@@ -245,10 +294,10 @@
             <div class="d-flex justify-content-center" id="carousel-area">
                 <div id="carousel-slider2" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators specialEli">
-                       <!--insert li here-->
+                        <!--insert li here-->
                     </ol>
                     <div class="carousel-inner specialE " role="listbox">
-         <!--insert special event images-->
+                        <!--insert special event images-->
                     </div>
                     <!-- end of carousel images -->
                     <a class="carousel-control-prev" href="#carousel-slider2" role="button" data-slide="prev">
@@ -272,12 +321,21 @@
                 <div class="col-md-12">
                     <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Fairs and Festivals</h2>
                     <p class="specialP">
-                        Laser Encore is one of the leading companies in producing laser light shows for fairs and festivals across the United States and worldwide. Our stand alone “Laser Extravaganzas” are a main attraction for any event.<br>
-                        Laser Encore choreographs lasers to fun family-friendly songs for audiences of all ages. Our most popular 3D aerial laser beam displays project out over your audience for an amazing powerful laser show. These displays are all scalable depending on the size of your event, audience and budget.
+                        Laser Encore is one of the leading companies in producing laser light shows for fairs and
+                        festivals across the United States and worldwide. Our stand alone “Laser Extravaganzas” are a
+                        main attraction for any event.<br>
+                        Laser Encore choreographs lasers to fun family-friendly songs for audiences of all ages. Our
+                        most popular 3D aerial laser beam displays project out over your audience for an amazing
+                        powerful laser show. These displays are all scalable depending on the size of your event,
+                        audience and budget.
                         <br>
                         <br>
                         <br>
-                        Many clients have used our laser displays to add to their fireworks for an even more spectacular grand finale. Or go green for your event! Laser Encore’s new laser projectors are all very efficient solid-state, air-cooled systems. No environmental or safety hazards that fireworks can have. Indoors or outdoors we have package deals with no hidden fees, hassle free and same day setups.
+                        Many clients have used our laser displays to add to their fireworks for an even more
+                        spectacular grand finale. Or go green for your event! Laser Encore’s new laser projectors are
+                        all very efficient solid-state, air-cooled systems. No environmental or safety hazards that
+                        fireworks can have. Indoors or outdoors we have package deals with no hidden fees, hassle free
+                        and same day setups.
                     </p>
                 </div>
             </div>
@@ -290,7 +348,7 @@
                 <div class="carousel-inner specialFF" role="listbox">
                     <!--insert fairs and festival images-->
                 </div>
-                    <!-- end of carousel images -->
+                <!-- end of carousel images -->
                 <a class="carousel-control-prev" href="#carousel-slider3" role="button" data-slide="prev">
                     <i class="fa fa-chevron-left"></i>
                 </a>
@@ -308,19 +366,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Music Festivals and Concerts</h2>
+                    <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Music Festivals and
+                        Concerts</h2>
                     <p class="specialP">
                         <!------------------------------------------------------------------------------------------>
-                        With Laser Encore’s all new solid-state, air-cooled, compact, plug and play laser projectors. The entire concert, music festivals and touring industry has never been easier and more effective than ever before.  No more hassle or extra expense of water cooling or three-phase power for just one laser system.
+                        With Laser Encore’s all new solid-state, air-cooled, compact, plug and play laser projectors.
+                        The entire concert, music festivals and touring industry has never been easier and more
+                        effective than ever before. No more hassle or extra expense of water cooling or three-phase
+                        power for just one laser system.
                         <br>
                         <br>
-                        Signal cables are now just a simple CAT5 connection. Optional DMX that your own lighting designer can program and control our laser projectors from their own lighting console. Or you can use one of Laser Encore’s own professional laser programmers/operators.
+                        Signal cables are now just a simple CAT5 connection. Optional DMX that your own lighting
+                        designer can program and control our laser projectors from their own lighting console. Or you
+                        can use one of Laser Encore’s own professional laser programmers/operators.
                         <br>
                         <br>
-                        Now that the new lasers are so affordable using multiple laser systems is a standard. Plus by being so compact you can eliminate bounce mirrors as we can place an entire laser system where a mirror used to be. It’s now not so much a technical issue on how many lasers you want to have vs. just a budget choice.
+                        Now that the new lasers are so affordable using multiple laser systems is a standard. Plus by
+                        being so compact you can eliminate bounce mirrors as we can place an entire laser system where
+                        a mirror used to be. It’s now not so much a technical issue on how many lasers you want to have
+                        vs. just a budget choice.
                         <br>
                         <br>
-                        Don’t worry about paperwork as Laser Encore is a fully licensed and insured laser light show company. Laser Encore offers full reporting, filling and all necessary paperwork for the state and federal FDA, CDRH and FAA on your next rental. Call for a quote for your next event or tour as you will be surprised.
+                        Don’t worry about paperwork as Laser Encore is a fully licensed and insured laser light show
+                        company. Laser Encore offers full reporting, filling and all necessary paperwork for the state
+                        and federal FDA, CDRH and FAA on your next rental. Call for a quote for your next event or tour
+                        as you will be surprised.
 
                     </p>
                 </div>
@@ -339,27 +409,33 @@
                 <div class="carousel-inner " role="listbox">
 
                     <div class="carousel-item active imageButton">
-                        <img class="slider3" src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/laserguitar.jpg?w=306&h=306&crop=1&ssl=1" alt="Laser Guitar" style="width:350px;height:300px;" title="Laser Guitar">
+                        <img class="slider3" src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/laserguitar.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Laser Guitar" style="width:350px;height:300px;" title="Laser Guitar">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Laser Guitar</a>
                     </div>
                     <div class="carousel-item imageButton">
-                        <img class="slider3" src="https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers2.jpg?w=306&h=306&crop=1&ssl=1" alt="Balloon Festival Lasers" style="width:350px;height:300px;" title="Balloon Festival Lasers">
+                        <img class="slider3" src="https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers2.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Balloon Festival Lasers" style="width:350px;height:300px;" title="Balloon Festival Lasers">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Balloon Festival Lasers</a>
                     </div>
                     <div class="carousel-item imageButton">
-                        <img class="slider3" src="https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers1.jpg?w=306&h=306&crop=1&ssl=1" alt="Balloon Festival Lasers" style="width:350px;height:300px;" title="Balloon Festival Lasers">
+                        <img class="slider3" src="https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/balloonfestlasers1.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Balloon Festival Lasers" style="width:350px;height:300px;" title="Balloon Festival Lasers">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Balloon Festival Lasers</a>
                     </div>
                     <div class="carousel-item imageButton">
-                        <img class="slider3" src="https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/snowlasers.jpg?w=306&h=306&crop=1&ssl=1" alt="Snow Laser" style="width:350px;height:300px;" title="Snow Laser">
+                        <img class="slider3" src="https://i0.wp.com/laserencore.com/wp-content/uploads/2017/02/snowlasers.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Snow Laser" style="width:350px;height:300px;" title="Snow Laser">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Snow Laser</a>
                     </div>
                     <div class="carousel-item imageButton">
-                        <img class="slider3" src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/lasereagle.jpg?w=306&h=306&crop=1&ssl=1" alt="Laser Eagle" style="width:350px;height:300px;" title="Laser Eagle">
+                        <img class="slider3" src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/lasereagle.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Laser Eagle" style="width:350px;height:300px;" title="Laser Eagle">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Laser Eagle</a>
                     </div>
                     <div class="carousel-item imageButton">
-                        <img class="slider3" src="https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/spaceneedlelasers.jpg?w=306&h=306&crop=1&ssl=1" alt="Space Needle Lasers" style="width:350px;height:300px;" title="Space Needle Lasers">
+                        <img class="slider3" src="https://i1.wp.com/laserencore.com/wp-content/uploads/2017/02/spaceneedlelasers.jpg?w=306&h=306&crop=1&ssl=1"
+                            alt="Space Needle Lasers" style="width:350px;height:300px;" title="Space Needle Lasers">
                         <a href="specialEvents.html" class="btn btn-info" role="button">Space Needle Lasers</a>
                     </div>
                 </div>
@@ -383,19 +459,35 @@
                 <div class="col-md-12">
                     <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Sales and Installations</h2>
                     <p class="specialP">
-                        For complete sales and installations Laser Encore is your one stop choice. From conception to design, installation, training, programming and maintenance. Laser Encore has the experience and knowledge to make it a great success as we like cutting edge mixed with tried and true technology. We can provide a wide variety of laser systems, software, controls and setups for any application.
+                        For complete sales and installations Laser Encore is your one stop choice. From conception to
+                        design, installation, training, programming and maintenance. Laser Encore has the experience
+                        and knowledge to make it a great success as we like cutting edge mixed with tried and true
+                        technology. We can provide a wide variety of laser systems, software, controls and setups for
+                        any application.
                         <br>
                         <br>
-                        Built for the touring industry. All of Laser Encore’s laser projectors are designed to be robust in a compact sealed IP54 rated enclosure. The solid-state technology allows for air-cooled (no more water cooling), low power consumption with great quality adding reliability with almost no maintenance.
+                        Built for the touring industry. All of Laser Encore’s laser projectors are designed to be
+                        robust in a compact sealed IP54 rated enclosure. The solid-state technology allows for
+                        air-cooled (no more water cooling), low power consumption with great quality adding reliability
+                        with almost no maintenance.
                         <br>
                         <br>
-                        Laser Encore has a wide variety of systems with power outputs ranging from 1 watt to a 100 watts. Single color or full-color, indoors or outdoors, touring or permanent installations. Incredibly good beam specifications with individual controls over red, green and blue. Creating great white balance over long distance projections.
+                        Laser Encore has a wide variety of systems with power outputs ranging from 1 watt to a 100
+                        watts. Single color or full-color, indoors or outdoors, touring or permanent installations.
+                        Incredibly good beam specifications with individual controls over red, green and blue. Creating
+                        great white balance over long distance projections.
                         <br>
                         <br>
-                        Our new optical X-Y scanners can project wide angles up to 60 degrees. Optional high speed graphic projectors with unheard of 90,000pps scanners create high quality, flicker free artwork, logos and animations.
+                        Our new optical X-Y scanners can project wide angles up to 60 degrees. Optional high speed
+                        graphic projectors with unheard of 90,000pps scanners create high quality, flicker free
+                        artwork, logos and animations.
                         <br>
                         <br>
-                        Simple CAT5 connection lets you network as many lasers as you want for individual control. Optional DMX inputs for control with any lighting console. Whether you are a professional lighting designer or a DeeJay. These plug & play laser systems are fun and easy to use. Creating spectacular, amazing aerial beam effects and displays. They meet and are certified FDA class IV entertainment laser products.
+                        Simple CAT5 connection lets you network as many lasers as you want for individual control.
+                        Optional DMX inputs for control with any lighting console. Whether you are a professional
+                        lighting designer or a DeeJay. These plug & play laser systems are fun and easy to use.
+                        Creating spectacular, amazing aerial beam effects and displays. They meet and are certified FDA
+                        class IV entertainment laser products.
                     </p>
                 </div>
             </div>
@@ -408,15 +500,22 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="about text-center ">
-                        <img src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/speed-of-light2.jpg?resize=692%2C461&ssl=1" alt="" style="width:40%;height:25%s;">
+                        <img src="https://i2.wp.com/laserencore.com/wp-content/uploads/2017/02/speed-of-light2.jpg?resize=692%2C461&ssl=1"
+                            alt="" style="width:40%;height:25%s;">
 
                         <h2 class="section-title wow fadeInDown animated aboutH2 m-3" data-wow-delay="0.3s">About</h2>
                         <div class="aboutContainerBG m-2">
                             <p class="specialP">
-                                Laser Encore is a new exciting laser light show company that comes with decades of experience. Our staff has the years of knowledge and know how to bring you the best in design, programming and production. Along with the latest and greatest in technology.
+                                Laser Encore is a new exciting laser light show company that comes with decades of
+                                experience. Our staff has the years of knowledge and know how to bring you the best in
+                                design, programming and production. Along with the latest and greatest in technology.
                                 <br>
                                 <br>
-                                Laser Encore has invested a great deal in purchasing all new RGB high powered laser light show systems, software and support gear. We have found our current smallest productions blows away some of our largest events from just a few years ago. Old and new clients will be amazed at how advanced and spectacular our laser light shows have become.
+                                Laser Encore has invested a great deal in purchasing all new RGB high powered laser
+                                light show systems, software and support gear. We have found our current smallest
+                                productions blows away some of our largest events from just a few years ago. Old and
+                                new clients will be amazed at how advanced and spectacular our laser light shows have
+                                become.
                                 <br>
                                 <br>
                                 Our passion is our work!
@@ -446,28 +545,33 @@
                             <div class="col-lg-4 col-md-12 col-xs-12">
                                 <div class="form-group">
                                     <i class="contact-icon fa fa-user"></i>
-                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required data-error="Please enter your name">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required
+                                        data-error="Please enter your name">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-xs-12">
                                 <div class="form-group">
                                     <i class="contact-icon fa fa-envelope-o"></i>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required
+                                        data-error="Please enter your email">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-xs-12">
                                 <div class="form-group">
                                     <i class="contact-icon fa fa-pencil-square-o"></i>
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required data-error="Please enter your Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required
+                                        data-error="Please enter your Subject">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-xs-12">
-                                <textarea class="form-control" id="message" rows="4" placeholder="Message" required data-error="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Message" required
+                                    data-error="Please enter your message"></textarea>
                                 <div class="help-block with-errors"></div>
-                                <button type="submit" id="form-submit" class="btn btn-common btn-form-submit">Send Message</button>
+                                <button type="submit" id="form-submit" class="btn btn-common btn-form-submit">Send
+                                    Message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
@@ -477,18 +581,20 @@
                 <div class="col-lg-4 col-md-6 col-xs-12">
                     <h4 class="contact-info-title text-left">Contact Information</h4>
                     <div class="contact-info">
-                        
-                            Nation Wide / World Wide
-                       
+
+                        Nation Wide / World Wide
+
                         <div class="tel-info">
                             <!--<a href="tel:1800452308"><i class="lni-mobile icons cyan-color contact-info-icon"></i>1800 452 308</a>-->
                             <a href="tel:1-651-633-8000"><img class="phoneIcon" src="./img/images/Phone_sign.png" alt="">1-651-633-8000</a>
                         </div>
-                        <a href="mailto:info@laserencore.com"><img class="emailIcon" src="./img/images/email_mail_new.png" alt="">info@laserencore.com</a>
+                        <a href="mailto:info@laserencore.com"><img class="emailIcon" src="./img/images/email_mail_new.png"
+                                alt="">info@laserencore.com</a>
                         <a href="www.laserencore.com"><i class="lni-tab icons cyan-color contact-info-icon"></i>www.laserencore.com</a>
                         <ul class="social-links">
                             <li>
-                                <a href="https://www.facebook.com/Laserencore-1176941399094589/"  target="blank"><img class="logo " src="./img/images/facebook-icon.jpg" alt=""> </a>
+                                <a href="https://www.facebook.com/Laserencore-1176941399094589/" target="blank"><img
+                                        class="logo " src="./img/images/facebook-icon.jpg" alt=""> </a>
                             </li>
                         </ul>
                     </div>
@@ -559,6 +665,7 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/pic_dynamic.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script>
 
@@ -579,4 +686,5 @@
     </script>
 
 </body>
+
 </html>
