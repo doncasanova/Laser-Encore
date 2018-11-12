@@ -11,6 +11,8 @@ addImage2();
 var imageNumber = 0;
 var imageModal = 0;
 
+
+
 function addImage() {
     for (i = 0; i < image.length; i++) {
         $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${imagePath}${image[i]}" alt="${image[i]}"></a></div>`);
@@ -59,7 +61,7 @@ function addFirstSpecialEventImage() {
     <a href="specialEvents.html" class="image1"</a>
                             </div>`);
 
-    $(".image1").append(`<img class="slider2 imageModal" src="${imagePath}${image[0]}" alt="${image[0]} style=" width:350px; height: 300px; " title="EDM Lasers">`);
+    $(".image1").append(`<img class="slider2 imageModal" src="${imagePath}${image[0]}" alt="${image[0]} title="EDM Lasers">`);
 
 }
 
@@ -71,8 +73,8 @@ function addFirstSpecialEventImage() {
     $(".specialEli").append(`<li data-target="#carousel-slider2" data-slide-to="0" class="active"></li>`);
 
     $(".specialE").append(`<div class="carousel-item imageButton">
-    <a href="specialEvents.html"><img class="slider2 imageModal" src="${imagePath}${image[i]}" alt="${image[i]} style=" width:350px; height: 300px; " title="EDM Lasers"></a>
-      <a href="specialEvents.html" class="test btn btn-info" role="button">Image Gallery</a>
+    <a href="specialEvents.html"><img class="slider2 imageModal" src="${imagePath}${image[i]}" alt="${image[i]} title="EDM Lasers"></a>
+     
                       </div>`);
 
         $(".specialEli").append(`<li data-target="#carousel-slider2" data-slide-to="${[i]}" class="active"></li>`);
@@ -114,7 +116,7 @@ function addFirstFairFestivalImage() {
      
                       </div>`);
 
-    $(".imageFF").append(`<img class="slider3 imageModal" src="${imagePath}${image2[0]}" alt="${image2[0]} style=" width:100%; height: 300px; " title="EDM Lasers">`);
+    $(".imageFF").append(`<img class="slider3 imageModal" src="${imagePath}${image2[0]}" alt="${image2[0]}" title="EDM Lasers">`);
 
 }
 
@@ -124,7 +126,7 @@ function addFairFestivalImage() {
     for (i = 1; i < image2.length; i++) {
 
         $(".specialFF").append(`<div class="carousel-item imageButton">
-    <a href="fairsAndFestivals.html" class="imageFF"><img class="slider3 imageModal" src="${imagePath}${image2[i]}" alt="${image2[i]} style=" width:100%; height: 300px; " title="EDM Lasers"></a>
+    <a href="fairsAndFestivals.html" class="imageFF"><img class="slider3 imageModal" src="${imagePath}${image2[i]}" alt="${image2[i]}" title="EDM Lasers"></a>
      
                       </div>`);
 
@@ -136,10 +138,6 @@ function addFairFestivalImage() {
     }
 
 }
-
-
-
-
 
 // Fairs and Festivals end
 
