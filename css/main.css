@@ -4600,6 +4600,13 @@ ul.nav-tabs li a {
   .label {
     padding: 0;
   }
+    .carousel-cell {
+        width: 100%;
+        height: 720px !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -4689,6 +4696,13 @@ ul.nav-tabs li a {
   .list-group {
     margin-bottom: 30px;
   }
+    .carousel-cell {
+        width: 100%;
+        height: 480px !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -4802,6 +4816,13 @@ ul.nav-tabs li a {
   .list-group {
     margin-bottom: 30px;
   }
+  .carousel-cell {
+    width: 100% ;
+    height: 240px !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    }
 }
 
 /* Custom CSS */
