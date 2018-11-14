@@ -142,6 +142,11 @@ function addFairFestivalImage() {
 // Fairs and Festivals end
 
 
+$(".carousel-cell").on("click", function () {
+    window.open("specialEvents.html");
+
+
+});
 
 
 
