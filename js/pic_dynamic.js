@@ -142,8 +142,20 @@ function addFairFestivalImage() {
 // Fairs and Festivals end
 
 
-$(".carousel-cell").on("click", function () {
+$(".cellOne").on("click", function () {
     window.open("specialEvents.html");
+
+
+});
+
+$(".cellTwo").on("click", function () {
+    window.open("fairsAndFestivals.html");
+
+
+});
+
+$(".cellThree").on("click", function () {
+    window.open("fairsAndFestivals.html");
 
 
 });
