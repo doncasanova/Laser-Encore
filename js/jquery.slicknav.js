@@ -196,6 +196,7 @@
                     //Emulate menu close
                         $($this.btn).click();
                 });
+                console.log('TEST')
             }
         });
 
