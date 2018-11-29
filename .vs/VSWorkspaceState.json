@@ -3,11 +3,10 @@
     "",
     "\\css",
     "\\gifs",
-    "\\img",
-    "\\img\\flicker",
     "\\img\\images",
-    "\\js"
+    "\\js",
+    "\\php"
   ],
-  "SelectedNode": "\\js\\jquery.slicknav.js",
+  "SelectedNode": "\\php\\form-process.php",
   "PreviewInSolutionExplorer": false
 }
